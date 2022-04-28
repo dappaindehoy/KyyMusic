@@ -164,7 +164,7 @@ async def music_onoff(_, message: Message):
             return
         DISABLED_GROUPS.remove(message.chat.id)
         await lel.edit(
-            f"**✅ Music Telah Di Diaktifkan Di {message.chat.title}**"
+            f"**✅ KontolTelah Di Diaktifkan Di {message.chat.title}**"
         )
 
     elif status in ("OFF", "off", "Off"):
@@ -175,7 +175,7 @@ async def music_onoff(_, message: Message):
             return
         DISABLED_GROUPS.append(message.chat.id)
         await lel.edit(
-            f"**✅ Music Telah Di Nonaktifkan Di {message.chat.title}**"
+            f"**✅ Peler Telah Di Nonaktifkan Di {message.chat.title}**"
         )
     else:
         await message.reply_text(
