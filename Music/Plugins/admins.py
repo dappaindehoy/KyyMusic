@@ -259,7 +259,7 @@ async def stop_cmd(_, message):
                     reply_markup=InlineKeyboardMarkup(buttons),
                     caption=(
                         f"""
-<b>⏭️ Melewati lagu</b>
+<b>⏭️ Melewati kontol</b>
 
 <b>🏷 Nama:</b>[{title[:25]}]({url})
 <b>⏱️ Durasi:</b> {duration}
@@ -296,7 +296,7 @@ async def stop_cmd(_, message):
                 photo=f"downloads/{_chat_}final.png",
                     reply_markup=InlineKeyboardMarkup(buttons),
                     caption=f"""
-<b>⏭️ Melewati lagu</b>
+<b>⏭️ Melewati kontol</b>
 
 <b>🏷️ Nama:</b> {title}
 <b>⏱️ Durasi:</b> {duration}
@@ -310,5 +310,5 @@ async def reload(_, message):
     chat_id = message.chat.id
     await _.send_message(
     chat_id,
-    "✅ Bot dimulai ulang **berhasil**\n\n✅ **Admin** daftar telah **diperbarui**"
+    "✅ kontol dimulai ulang **berhasil**\n\n✅ **Admin** daftar telah **diperbarui**"
 )
