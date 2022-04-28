@@ -83,11 +83,11 @@ async def welcome(_, message: Message):
         try:
             if member.id in OWNER:
                 return await message.reply_text(
-                    f"💡 Pemilik Bot [{member.mention}] baru saja bergabung di grup ini."
+                    f"💡 Pemilik Kontol [{member.mention}] baru saja bergabung di grup ini."
                 )
             if member.id in SUDOERS:
                 return await message.reply_text(
-                    f"💡 Admin Bot [{member.mention}] baru saja bergabung di grup ini."
+                    f"💡 Admin Kontol [{member.mention}] baru saja bergabung di grup ini."
                 )
             if member.id == ASSID:
                 await remove_active_chat(chat_id)
